@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* @media screen and (max-width: 480px) {
+    .menu-bar {
+        display: none;
+    }
+} */
+
+.menu-bar {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+}
+
+.menu-bar img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-itens {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+.menu-itens a {
+    text-decoration: none;
+    color: black;
+    padding-right: 80px;
+}
+
+.titulo {
+    padding-top: 15%;
+}
+
+.titulo h1 {
+    font-size: 90px;
+}
+
+.home-filtro {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: yellow; */
+    border-radius: 3px;
+    width: 871px;
+    height: 168px;
+}
+
+.home-filtro-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    background-image: url(/img/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh; /* 100% da altura da janela de visualização */
+    overflow: hidden; /* Impede que a imagem se expanda ao rolar */
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+
+.header h1 {
+    padding: 0px;
+    margin: 0px;
+}
