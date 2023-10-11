@@ -6,12 +6,13 @@
         <link rel="stylesheet" href="/css/style.css">
         <script type="text/javascript" src="/js/app.js"></script>
         <script src="https://kit.fontawesome.com/65a36bd056.js" crossorigin="anonymous"></script>
-        <title>Document</title>
+        <link rel="shortcut icon" type="imagex/png" href="/img/logo/logo.svg">
+        <title>APOLLO ROTAS | HOME</title>
     </head>
     <body>
-        <div class="header">
+        <div class="header fading">
             <div class="menu-bar">
-                <img src="/img/logo.svg" alt="Logo Apollo Rotas">
+                <img src="/img/logo/logo.svg" alt="Logo Apollo Rotas">
                 <div class="menu-itens">
                     <a href="#">Ofertas</a>
                     <a href="#">Pacotes</a>
@@ -47,6 +48,37 @@
                     <a href="#">Pacotes</a>
                     <a href="#">Passeios</a>
                 </div>
+                <hr>
+                <div class="form-filtro field">
+                    <div class="input-form-filtro">
+                        <input type="input" class="form-linha" placeholder="Origem" name="origem" id='origem' required />
+                        <label for="origem" class="form__label">Origem</label>
+                    </div>
+                    <div class="input-form-filtro">
+                        <input type="input" class="form-linha" placeholder="Destino" name="destino" id='destino' required />
+                        <label for="destino" class="form__label">Destino</label>
+                    </div>
+                    <div class="input-form-filtro">
+                        <input type="input" class="form-linha" placeholder="Name" name="name" id='name' required />
+                    <label for="name" class="form__label">Ida</label>
+                    </div>
+                    <div class="input-form-filtro">
+                        <input type="input" class="form-linha" placeholder="Name" name="name" id='name' required />
+                        <label for="name" class="form__label">Volta</label>
+                    </div>
+                </div>
+                <input type="checkbox" name="sem_data" id="sem_data">
+                <label style="color: white;" for="sem_data">SEM DATA DEFINIDA</label>
+                <button>Buscar</button>
+                <!-- <div class="checkbox-home">
+                    <input class="switch" type="checkbox" id="switch" name="switch" value="private">
+                    <label for="switch">
+                        <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>COM DATA DEFINIDA</span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>SEM DATA DEFINIDA</span>
+                        </span>
+                    </label>
+                </div> -->
             </div>
     </body>
 </html>
