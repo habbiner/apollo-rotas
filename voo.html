@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="voo.css">
+    <title>Voos</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="top">
+            <div class="barra">
+                <a href="#">Ofertas</a>
+                <a href="#">Pacotes</a>
+                <a href="#">Hotel</a>
+            </div><!--barra-->
+        </div><!--top-->
+        <div class="pesquisa">
+
+            <div class="pesquisa1">
+                <div class="pq1">
+                    <p>De: </p>
+                    <input (type="text" , placeholder="Origem" )>
+                    <div class="line"></div>
+                </div><!--pq1-->
+                <div class="pq1">
+                    <p>Para: </p>
+                    <input (type="text" , placeholder="Destino" )>
+                    <div class="line"></div>
+                </div><!--pq1-->
+            </div><!--pesquisa1-->
+            <div class="separate"></div>
+            <div class="date">
+                <div class="form1">
+                    <form>
+                        <label for="data_inicial">Ida:</label>
+                        <input type="date" id="data_inicial" name="data_inicial">
+                        <br>
+                        <label for="data_final"> Volta:</label>
+                        <input type="date" id="data_final" name="data_final">
+                    </form>
+                </div><!--form-->
+            </div><!--data-->
+    
+            <div class="btn0">
+                <div class="btn1"> Alterar Busca</div>
+            </div><!--bnt0-->
+        </div><!--pesqisa-->
+        <br>
+        <br>
+        <hr>
+    </header>
+    <main>
+        <div class="all">
+        <div class="p1">
+            <div class="passagem">
+                <h1>PASSAGENS AÉREAS</h1>
+                <div class="btn-all">
+                    <div class="btn">
+                        Só ida
+                    </div><!--btn-->
+                    <div class="btn">
+                        Ida e Volta
+                    </div><!--btn-->
+                    <div class="btn">
+                        Multidestinos
+                    </div><!--btn-->
+                </div><!--btn-all-->
+                <div class="origem1">
+                    <div class="origem">
+                        <p>Origem</p>
+                        <input (type="text" , placeholder="Origem" )>
+                        <div class="line"></div>
+                    </div><!--origem-->
+                </div><!--origem1-->
+                <div class="destino">
+                    <p>Destino</p>
+                    <div class="origem">
+                        <input (type="text" , placeholder="Destino" )>
+                        <div class="line"></div>
+                    </div><!--origem-->
+                </div><!--destino-->
+                <div class="data">
+                    <label for="data_inicial">Ida:</label>
+                    <label for="data_final"> Volta:</label>
+                </div><!--data-->
+                <div class="form">
+                    <form>
+
+                        <input type="date" id="data_inicial" name="data_inicial">
+                        <br>
+
+                        <input type="date" id="data_final" name="data_final">
+                    </form>
+                    <div class="chek">
+                        <input type="checkbox" id="csharp" name="data">
+                        <label for="csharp" id="nome">Ainda não definidas</label>
+                    </div> <!--chek-->
+                </div><!--form-->
+                <div class="passageiro">
+                    <p>Passageiro</p>
+                    <div class="origem">
+                        <input (type="text" , placeholder="1 pessoa, economica" )>
+                        <div class="line"></div>
+                    </div><!--passageiro-->
+                    <div class="buscar">
+                        <div class="btn-buscar">Buscar</div><!--btn-buscar-->
+                    </div><!--buscar-->
+                </div><!--passageiro-->
+            </div><!--passagem-->
+            <div class="filtro">
+                <div class="f1">
+                    <h4>Filtro</h4>
+                    <hr>
+                </div><!--f1-->
+                <div class="f2">
+                    <h5>Quantiadade de paradas</h5>
+                    <div class="f2-0">
+                        <div class="f2-1">
+                            <img src="img/linha1.png" alt="linha1">
+                            <p>voo direto</p>
+                        </div><!--f2-1-->
+                        <div class="f2-1">
+                            <img src="img/linha2.png" alt="linha2">
+                            <p>1 parada</p>
+                        </div><!--f2-1-->
+                        <div class="f2-1">
+                            <img src="img/linha3.png" alt="linha3">
+                            <p>2 paradas</p>
+                        </div><!--f2-1-->
+
+                    </div><!--f2-0-->
+                    <hr>
+                </div><!--f2-->
+                <div class="f3">
+                    <h5>Bagagens</h5>
+                    <div class="f2-0">
+                        <div class="f2-1">
+                            <img src="img/mão.png" alt="linha1">
+                            <p>itens pessoais</p>
+                        </div><!--f2-1-->
+                        <div class="f2-1">
+                            <img src="img/dois.png" alt="linha2">
+                            <p>bagagem de mão</p>
+                        </div><!--f2-1-->
+                        <div class="f2-1">
+                            <img src="img/todos.png" alt="linha3">
+                            <p>bagagem inclusa</p>
+                        </div><!--f2-1-->
+
+                    </div><!--f2-0-->
+                    <hr>
+                </div><!--f3-->
+                <div class="f4">
+                    <h5>Valor da passagem</h5>
+                    <p>Qualquer preço</p>
+                    <input type="range" min="0" max="10000" value="50" class="estilo" id="valor">
+
+                    <br>
+
+                    <p id="resultado">.</p>
+                    <hr>
+                </div><!--f4-->
+                <div class="f5">
+                    <h5>Companhia Aérea</h5>
+                    <div class="chek-ca">
+                        <input type="checkbox" id="csharp" name="data">
+                        <label for="csharp" id="nome">Todas as companhias aéreas</label>
+                    </div> <!--chek-->
+                    <div class="chek-ca">
+                        <input type="checkbox" id="csharp" name="data">
+                        <img src="img/latam.png" alt="Latam">
+                        <label for="csharp" id="nome">Latam</label>
+                    </div> <!--chek-->
+                    <div class="chek-ca">
+                        <input type="checkbox" id="csharp" name="data">
+                        <img src="img/azul.png" alt="Azul">
+                        <label for="csharp" id="nome">Azul</label>
+                    </div> <!--chek-->
+                    <div class="chek-ca">
+                        <input type="checkbox" id="csharp" name="data">
+                        <img src="img/gol.png" alt="Gol">
+                        <label for="csharp" id="nome">Gol</label>
+                    </div> <!--chek-->
+                    <hr>
+                </div><!--f5-->
+            </div><!--filtro-->
+        </div><!--p1-->
+        <div class="p2">
+            <div class="menu">
+                <div class="m1">
+                    <h5>Melhor preço por companhia</h5>
+                </div><!--m1-->
+                <div class="m2">
+                    <h5>Preço +/- 3 dias </h5>
+                </div><!--m2-->
+                <div class="m0"></div>
+                <div class="m01"></div>
+                <div class="m02"></div>
+                <div class="m31">
+                    <h6>Latam</h6>
+                </div><!--m3-->
+                <div class="m3">
+                    <h6>Azul</h6>
+                </div><!--m3-->
+                <div class="m4">
+                    <h6>Gol</h6>
+                </div><!--m4-->
+                <div class="m5">
+                    <h6>Voo direto</h6>
+                </div><!--m5-->
+                <div class="m">
+                    <h6>R$ 1.530,00</h6>
+                </div><!--m-->
+                <div class="m">
+                    <h6>R$ 1.458,50</h6>
+                </div> <!--m-->
+                <div class="m9">
+                    <h6>--------</h6>
+                </div><!--m-->
+                <div class="m5">
+                    <h6>1 Parada</h6>
+                </div><!--m5-->
+                <div class="m">
+                    <h6>R$ 1.458,50</h6>
+                </div><!--m-->
+                <div class="m">
+                    <h6>R$ 1.7783,43</h6>
+                </div> <!--m-->
+                <div class="m9">
+                    <h6>R$ 1.7783,43</h6>
+                </div> <!--m-->
+                <div class="m6">
+                    <h6>2 Parada</h6>
+                </div><!--m5-->
+                <div class="m7">
+                    <h6>R$ 1.458,50</h6>
+                </div><!--m-->
+                <div class="m7">
+                    <h6>R$ 1.7783,43</h6>
+                </div> <!--m-->
+                <div class="m8">
+                    <h6>R$ 1.7783,43</h6>
+                </div> <!--m-->
+            </div><!--menu-->
+            <div class="ordem">
+                <h5>Ordenar</h5>
+                <div class="img1">
+                    <img src="img/seta.png" alt="seta" class="imagem-efeito">
+                </div><!--img1---->
+                <div class="img2">
+                    <img src="img/seta2.png" alt="seta" class="imagem-efeito">
+                </div><!--img2-->
+            </div><!--ordem-->
+            <div class="p3">
+                <div class="bilhete">
+                    <div class="texto">
+                        <div class="aviao-logo">
+                            <img src="img/latam.png" alt="latam logo" class="aviao-logo">
+                            <h5>Latam</h5>
+                        </div><!--aviao-logo-->
+                        <div class="ida">
+                            <div class="aviao">
+                                <img src="img/aviao.png" alt="avião indo">
+                                <h5>IDA GUR - SDU </h5>
+                            </div><!--aviao-->
+                            <p>qua. 25 ago.2023</p>
+                            <div class="ida1">
+                                <p>20:40 - <span>Direto<span></p>
+
+                            </div> <!--ida1-->
+                        </div><!--ida-->
+
+                        <div class="volta">
+                            <div class="aviao">
+                                <img src="img/aviao2.png" alt="avião voltando">
+                                <h5>IDA SDU - GUR </h5>
+                            </div><!--aviao-->
+                            <p>qua. 29 ago.2023</p>
+                            <div class="volta1">
+                                <p>10:20 - <span>Direto<span></p>
+
+                            </div><!--volta1-->
+                        </div><!--volta-->
+                        <h5>4 Dias</h5>
+                        <div class="pins">
+                            <img src="img/todos.png" alt="mochila">
+                        </div><!--pins-->
+                    </div><!--texto-->
+                </div><!--bilhete-->
+                <div class="valor">
+                    <div class="t2">
+                        <h6>Total/R$</h6>
+                        <h5>1.504,50</h5>
+
+                    </div><!--t2-->
+                    <div class="texto">
+
+                        <p>1 adulto</p>
+                        <h6>R$ 1.599</h6>
+                        <p>Taxas de embarque</p>
+                        <h6>R$ 40</h6>
+                        <p>Taxas de serviço </p>
+                        <h6>R$ 160</h6>
+                    </div><!--texto-->
+                    <div class="comprar">
+                        <div class="btn-comprar">Comprar</div><!--btn-compar-->
+                    </div><!--comprar-->
+                </div><!--valor-->
+            </div><!--p3-->
+            <div class="p3">
+                <div class="bilhete">
+                    <div class="texto">
+                        <div class="aviao-logo">
+                            <img src="img/latam.png" alt="latam logo" class="aviao-logo">
+                            <h5>Latam</h5>
+                        </div><!--aviao-logo-->
+                        <div class="ida">
+                            <div class="aviao">
+                                <img src="img/aviao.png" alt="avião indo">
+                                <h5>IDA GUR - SDU </h5>
+                            </div><!--aviao-->
+                            <p>qua. 25 ago.2023</p>
+                            <div class="ida1">
+                                <p>20:40 - <span>Direto<span></p>
+
+                            </div> <!--ida1-->
+                        </div><!--ida-->
+
+                        <div class="volta">
+                            <div class="aviao">
+                                <img src="img/aviao2.png" alt="avião voltando">
+                                <h5>IDA SDU - GUR </h5>
+                            </div><!--aviao-->
+                            <p>qua. 29 ago.2023</p>
+                            <div class="volta1">
+                                <p>10:20 - <span>Direto<span></p>
+
+                            </div><!--volta1-->
+                        </div><!--volta-->
+                        <h5>4 Dias</h5>
+                        <div class="pins">
+                            <img src="img/todos.png" alt="mochila">
+                        </div><!--pins-->
+                    </div><!--texto-->
+                </div><!--bilhete-->
+                <div class="valor">
+                    <div class="t2">
+                        <h6>Total/R$</h6>
+                        <h5>1.504,50</h5>
+
+                    </div><!--t2-->
+                    <div class="texto">
+
+                        <p>1 adulto</p>
+                        <h6>R$ 1.599</h6>
+                        <p>Taxas de embarque</p>
+                        <h6>R$ 40</h6>
+                        <p>Taxas de serviço </p>
+                        <h6>R$ 160</h6>
+                    </div><!--texto-->
+                    <div class="comprar">
+                        <div class="btn-comprar">Comprar</div><!--btn-compar-->
+                    </div><!--comprar-->
+                </div><!--valor-->
+            </div><!--p3-->
+
+            <div class="p3">
+                <div class="bilhete">
+                    <div class="texto">
+                        <div class="aviao-logo">
+                            <img src="img/latam.png" alt="latam logo" class="aviao-logo">
+                            <h5>Latam</h5>
+                        </div><!--aviao-logo-->
+                        <div class="ida">
+                            <div class="aviao">
+                                <img src="img/aviao.png" alt="avião indo">
+                                <h5>IDA GUR - SDU </h5>
+                            </div><!--aviao-->
+                            <p>qua. 25 ago.2023</p>
+                            <div class="ida1">
+                                <p>20:40 - <span>Direto<span></p>
+
+                            </div> <!--ida1-->
+                        </div><!--ida-->
+
+                        <div class="volta">
+                            <div class="aviao">
+                                <img src="img/aviao2.png" alt="avião voltando">
+                                <h5>IDA SDU - GUR </h5>
+                            </div><!--aviao-->
+                            <p>qua. 29 ago.2023</p>
+                            <div class="volta1">
+                                <p>10:20 - <span>Direto<span></p>
+
+                            </div><!--volta1-->
+                        </div><!--volta-->
+                        <h5>4 Dias</h5>
+                        <div class="pins">
+                            <img src="img/todos.png" alt="mochila">
+                        </div><!--pins-->
+                    </div><!--texto-->
+                </div><!--bilhete-->
+                <div class="valor">
+                    <div class="t2">
+                        <h6>Total/R$</h6>
+                        <h5>1.504,50</h5>
+
+                    </div><!--t2-->
+                    <div class="texto">
+
+                        <p>1 adulto</p>
+                        <h6>R$ 1.599</h6>
+                        <p>Taxas de embarque</p>
+                        <h6>R$ 40</h6>
+                        <p>Taxas de serviço </p>
+                        <h6>R$ 160</h6>
+                    </div><!--texto-->
+                    <div class="comprar">
+                        <div class="btn-comprar">Comprar</div><!--btn-compar-->
+                    </div><!--comprar-->
+                </div><!--valor-->
+            </div><!--p3-->
+
+            <div class="p3">
+                <div class="bilhete">
+                    <div class="texto">
+                        <div class="aviao-logo">
+                            <img src="img/latam.png" alt="latam logo" class="aviao-logo">
+                            <h5>Latam</h5>
+                        </div><!--aviao-logo-->
+                        <div class="ida">
+                            <div class="aviao">
+                                <img src="img/aviao.png" alt="avião indo">
+                                <h5>IDA GUR - SDU </h5>
+                            </div><!--aviao-->
+                            <p>qua. 25 ago.2023</p>
+                            <div class="ida1">
+                                <p>20:40 - <span>Direto<span></p>
+
+                            </div> <!--ida1-->
+                        </div><!--ida-->
+
+                        <div class="volta">
+                            <div class="aviao">
+                                <img src="img/aviao2.png" alt="avião voltando">
+                                <h5>IDA SDU - GUR </h5>
+                            </div><!--aviao-->
+                            <p>qua. 29 ago.2023</p>
+                            <div class="volta1">
+                                <p>10:20 - <span>Direto<span></p>
+
+                            </div><!--volta1-->
+                        </div><!--volta-->
+                        <h5>4 Dias</h5>
+                        <div class="pins">
+                            <img src="img/todos.png" alt="mochila">
+                        </div><!--pins-->
+                    </div><!--texto-->
+                </div><!--bilhete-->
+                <div class="valor">
+                    <div class="t2">
+                        <h6>Total/R$</h6>
+                        <h5>1.504,50</h5>
+
+                    </div><!--t2-->
+                    <div class="texto">
+
+                        <p>1 adulto</p>
+                        <h6>R$ 1.599</h6>
+                        <p>Taxas de embarque</p>
+                        <h6>R$ 40</h6>
+                        <p>Taxas de serviço </p>
+                        <h6>R$ 160</h6>
+                    </div><!--texto-->
+                    <div class="comprar">
+                        <div class="btn-comprar">Comprar</div><!--btn-compar-->
+                    </div><!--comprar-->
+                </div><!--valor-->
+            </div><!--p3-->
+
+            <div class="p3">
+                <div class="bilhete">
+                    <div class="texto">
+                        <div class="aviao-logo">
+                            <img src="img/latam.png" alt="latam logo" class="aviao-logo">
+                            <h5>Latam</h5>
+                        </div><!--aviao-logo-->
+                        <div class="ida">
+                            <div class="aviao">
+                                <img src="img/aviao.png" alt="avião indo">
+                                <h5>IDA GUR - SDU </h5>
+                            </div><!--aviao-->
+                            <p>qua. 25 ago.2023</p>
+                            <div class="ida1">
+                                <p>20:40 - <span>Direto<span></p>
+
+                            </div> <!--ida1-->
+                        </div><!--ida-->
+
+                        <div class="volta">
+                            <div class="aviao">
+                                <img src="img/aviao2.png" alt="avião voltando">
+                                <h5>IDA SDU - GUR </h5>
+                            </div><!--aviao-->
+                            <p>qua. 29 ago.2023</p>
+                            <div class="volta1">
+                                <p>10:20 - <span>Direto<span></p>
+
+                            </div><!--volta1-->
+                        </div><!--volta-->
+                        <h5>4 Dias</h5>
+                        <div class="pins">
+                            <img src="img/todos.png" alt="mochila">
+                        </div><!--pins-->
+                    </div><!--texto-->
+                </div><!--bilhete-->
+                <div class="valor">
+                    <div class="t2">
+                        <h6>Total/R$</h6>
+                        <h5>1.504,50</h5>
+
+                    </div><!--t2-->
+                    <div class="texto">
+
+                        <p>1 adulto</p>
+                        <h6>R$ 1.599</h6>
+                        <p>Taxas de embarque</p>
+                        <h6>R$ 40</h6>
+                        <p>Taxas de serviço </p>
+                        <h6>R$ 160</h6>
+                    </div><!--texto-->
+                    <div class="comprar">
+                        <div class="btn-comprar">Comprar</div><!--btn-compar-->
+                    </div><!--comprar-->
+                </div><!--valor-->
+            </div><!--p3-->
+
+            <div class="p3">
+                <div class="bilhete">
+                    <div class="texto">
+                        <div class="aviao-logo">
+                            <img src="img/latam.png" alt="latam logo" class="aviao-logo">
+                            <h5>Latam</h5>
+                        </div><!--aviao-logo-->
+                        <div class="ida">
+                            <div class="aviao">
+                                <img src="img/aviao.png" alt="avião indo">
+                                <h5>IDA GUR - SDU </h5>
+                            </div><!--aviao-->
+                            <p>qua. 25 ago.2023</p>
+                            <div class="ida1">
+                                <p>20:40 - <span>Direto<span></p>
+
+                            </div> <!--ida1-->
+                        </div><!--ida-->
+
+                        <div class="volta">
+                            <div class="aviao">
+                                <img src="img/aviao2.png" alt="avião voltando">
+                                <h5>IDA SDU - GUR </h5>
+                            </div><!--aviao-->
+                            <p>qua. 29 ago.2023</p>
+                            <div class="volta1">
+                                <p>10:20 - <span>Direto<span></p>
+
+                            </div><!--volta1-->
+                        </div><!--volta-->
+                        <h5>4 Dias</h5>
+                        <div class="pins">
+                            <img src="img/todos.png" alt="mochila">
+                        </div><!--pins-->
+                    </div><!--texto-->
+                </div><!--bilhete-->
+                <div class="valor">
+                    <div class="t2">
+                        <h6>Total/R$</h6>
+                        <h5>1.504,50</h5>
+
+                    </div><!--t2-->
+                    <div class="texto">
+
+                        <p>1 adulto</p>
+                        <h6>R$ 1.599</h6>
+                        <p>Taxas de embarque</p>
+                        <h6>R$ 40</h6>
+                        <p>Taxas de serviço </p>
+                        <h6>R$ 160</h6>
+                    </div><!--texto-->
+                    <div class="comprar">
+                        <div class="btn-comprar">Comprar</div><!--btn-compar-->
+                    </div><!--comprar-->
+                </div><!--valor-->
+            </div><!--p3-->
+
+
+        </div><!--p2-->
+        <script type="text/javascript">
+            function range() {
+                let resultado = document.getElementById("resultado");
+                let valor = document.getElementById("valor").value;
+                resultado.innerHTML = valor
+            }
+            range()
+            document.addEventListener("change", range);
+        </script>
+        </div><!--all-->
+    </main>
+    <footer>
+        oi oi oi
+    </footer>
+</body>
+
+</html>
