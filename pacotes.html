@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="js/app.js"></script>
+        <script src="https://kit.fontawesome.com/65a36bd056.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="imagex/png" href="/img/logo/logo.svg">
+        <title>APOLLO ROTAS | PACOTES</title>
+    </head>
+    <body>
+        <div class="header-pacotes">
+            <div class="menu-bar">
+                <a href="/index.html"><img src="/img/logo/logo.svg" alt="Logo Apollo Rotas"></a>
+                <div class="menu-itens">
+                    <a href="#">Ofertas</a>
+                    <a href="/pacotes.html">Pacotes</a>
+                    <a href="#">Hotel</a>
+                </div>
+            </div>
+            <div class="header-filtro-barra-pacotes">
+                <div class="header-filtro-barra-pacotes-esquerda">
+                    <div class="form-filtro field">
+                        <div class="input-form-filtro">
+                            <input type="input" class="form-linha" placeholder="de" name="de" id='de' required />
+                            <label for="de" class="form__label">De:</label>
+                        </div>
+                        <div class="input-form-filtro">
+                            <input type="input" class="form-linha" placeholder="para" name="para" id='para' required />
+                            <label for="para" class="form__label">Para:</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="/img/divisoria.svg" alt="divisoria"> -->
+                <div class="header-filtro-barra-pacotes-direita">
+                    <input type="date" name="" id="">
+                    <select name="" id="">
+                        <option value="">1 Quarto | 2 Pessoas</option>
+                        <option value="">1 Quarto | 3 Pessoas</option>
+                        <option value="">1 Quarto | 4 Pessoas</option>
+                        <option value="">2 Quartos | 4 Pessoas</option>
+                        <option value="">2 Quarto | 6 Pessoas</option>
+                    </select>
+                    <button>Alterar Busca</button>
+                </div>
+            </div>
+        </div>
+        <div class="corpo-sobre">
+            <div class="corpo-sobre-esquerda">
+                <div class="card-corpo-sobre-esquerda">
+                    <div class="cabecalho-card-corpo-sobre-esquerda">
+                        <h1>Voo</h1>
+                        <h3>Detalhes ida | Detalhes volta</h3>
+                    </div>
+                    <div class="meio-cabecalho-card-corpo-sobre-esquerda">
+                        <div>
+                            <h3>Ida</h3>
+                            <h1 class="clock" id="clock1">22:10</h1>
+                            <h3>MCZ</h3>
+                        </div>
+                        <div>
+                            <input type="range" min="0" max="100" step="5" value="50" id="range1" />
+                        </div>
+                        <div>
+                            <h3>&nbsp;</h3>
+                            <h1>03:00</h1>
+                            <h3>SAO</h3>
+                        </div>
+                    </div>
+                    <div class="meio-cabecalho-card-corpo-sobre-esquerda">
+                        <div>
+                            <h3>Volta</h3>
+                            <h1 class="clock" id="clock">22:10</h1>
+                            <h3>MCZ</h3>
+                        </div>
+                        <div>
+                            <svg width="100" height="2" viewBox="0 0 255 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.985352" y1="0.753265" x2="254.72" y2="0.753265" stroke="black"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>&nbsp;</h3>
+                            <h1>12:00</h1>
+                            <h3>SAO</h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-cabecalho-card-corpo-sobre-esquerda">
+                        <button>Alterar voo</button>
+                    </div>
+                </div>
+                <div class="card-filtro-sobre-esquerda">
+                    <div class="cabecalho-card-filtro-esquerda">
+                        <h1>Filtros</h1>
+                    </div>
+                    <hr>
+                    <div class="meio-cabecalho-card-filtro-esquerda">
+                        <h3>Valor da diária</h3>
+                        <div style="display: flex; justify-content: center;">
+                            <svg width="255" height="2" viewBox="0 0 255 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.985352" y1="0.753265" x2="254.72" y2="0.753265" stroke="black"/>
+                            </svg>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <p>Valor minimo</p>
+                            <p>Valor máximo</p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <p>Dê:</p>
+                                <p>_________________</p>
+                            </div>
+                            <div>
+                                <p>Até:</p>
+                                <p>_________________</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Categoria</h3>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="1-estrela" id="1-estrela">
+                                <label for="1-estrela">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="2-estrela" id="2-estrela">
+                                <label for="2-estrela">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="3-estrela" id="3-estrela">
+                                <label for="3-estrela">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="4-estrela" id="4-estrela">
+                                <label for="4-estrela">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                </label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="5-estrela" id="5-estrela">
+                                <label for="5-estrela">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.27961 1.95296L9.6996 6.68594L9.8065 7.04225H10.1785H14.8795L11.0429 10.061L10.7753 10.2715L10.8732 10.5976L12.3178 15.4127L8.58879 12.4785L8.27961 12.2353L7.97042 12.4785L4.24142 15.4127L5.68603 10.5976L5.78387 10.2715L5.51631 10.061L1.67977 7.04225H6.38071H6.75272L6.85962 6.68594L8.27961 1.95296Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <h3>Refeições</h3>
+                        <div>
+                            <div>
+                                <input type="checkbox" name="todas-refeicoes" id="todas-refeicoes">
+                                <label for="todas-refeicoes">Todas as opções</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cafe-manha" id="cafe-manha">
+                                <label for="cafe-manha">Café da manhã</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="meia" id="meia">
+                                <label for="meia">Meia pensão</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="sem-cafe" id="sem-cafe">
+                                <label for="sem-cafe">Sem café da manhã</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card-comodidades">
+                        <h3>Comodidades</h3>
+                        <div class="card-comodidades-alinhar">
+                            <div class="card-comodidades-topo">
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <span>Wi-Fi</span>
+                                </div>
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                    <span>Academia</i></span>
+                                </div>
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-champagne-glasses"></i>
+                                    <span>Bar</span>
+                                </div>
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-utensils"></i>
+                                    <span>Restaurante</span>
+                                </div>
+                            </div>
+                            <div class="card-comodidades-baixo">
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-baby-carriage"></i>
+                                    <span>Kids Club</span>
+                                </div>
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <span>Spa</span>
+                                </div>
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-car-tunnel"></i>
+                                    <span>Garagem</span>
+                                </div>
+                                <div class="card-comodidades-itens">
+                                    <i class="fa-solid fa-person-swimming"></i>
+                                    <span>Piscina</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="corpo-sobre-direita">
+                <div class="alinhar-card-sobre">
+                    <div class="card-sobre-direita">
+                        <div class="img-card-sobre-direita">
+                            <img src="/img/pacotes/hotel-01.svg" alt="">
+                        </div>
+                        <div class="texto-direita">
+                            <div class="topo-card-sobre-direita">
+                                <div class="texto-card-sobre-direita">
+                                    <h1>Designer Hotel</h1>
+                                    <div class="alinhar-texto-card">
+                                        <p>Rua Epaminondas Gracindo, 210 , Maceio, Alagoas, Brasil</p>
+                                        <a href="#">Ver no mapa</a>
+                                    </div>
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            <div class="baixo-card-sobre-direita">
+                                <div class="texto-card-sobre-direita">
+                                    <h2>Voo + Hospedagem</h2>
+                                    <hr>
+                                    <div class="divisoria-card">
+                                        <div style="width: 50%;">
+                                            <p>Preço por pessoa</p>
+                                            <span id="rs">R$</span><span> 3.500</span>
+                                            <p id="taxas">Taxas e impostos inclusos</p>
+                                        </div>
+                                        <div class="alinhar-btn-card-sobre">
+                                            <button>Selecionar Hotel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-sobre-direita">
+                        <div class="img-card-sobre-direita">
+                            <img src="/img/pacotes/hotel-02.svg" alt="">
+                        </div>
+                        <div class="texto-direita">
+                            <div class="topo-card-sobre-direita">
+                                <div class="texto-card-sobre-direita">
+                                    <h1>Designer Hotel</h1>
+                                    <div class="alinhar-texto-card">
+                                        <p>Rua Epaminondas Gracindo, 210 , Maceio, Alagoas, Brasil</p>
+                                        <a href="#">Ver no mapa</a>
+                                    </div>
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            <div class="baixo-card-sobre-direita">
+                                <div class="texto-card-sobre-direita">
+                                    <h2>Voo + Hospedagem</h2>
+                                    <hr>
+                                    <div class="divisoria-card">
+                                        <div style="width: 50%;">
+                                            <p>Preço por pessoa</p>
+                                            <span id="rs">R$</span><span> 3.500</span>
+                                            <p id="taxas">Taxas e impostos inclusos</p>
+                                        </div>
+                                        <div class="alinhar-btn-card-sobre">
+                                            <button>Selecionar Hotel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-sobre-direita">
+                        <div class="img-card-sobre-direita">
+                            <img src="/img/pacotes/hotel-03.svg" alt="">
+                        </div>
+                        <div class="texto-direita">
+                            <div class="topo-card-sobre-direita">
+                                <div class="texto-card-sobre-direita">
+                                    <h1>Designer Hotel</h1>
+                                    <div class="alinhar-texto-card">
+                                        <p>Rua Epaminondas Gracindo, 210 , Maceio, Alagoas, Brasil</p>
+                                        <a href="#">Ver no mapa</a>
+                                    </div>
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.61804L11.7696 7.06434L11.8819 7.40983H12.2451H17.9717L13.3388 10.7758L13.0449 10.9894L13.1572 11.3348L14.9268 16.7812L10.2939 13.4152L10 13.2016L9.70611 13.4152L5.0732 16.7812L6.84282 11.3348L6.95507 10.9894L6.66118 10.7758L2.02828 7.40983H7.75486H8.11813L8.23039 7.06434L10 1.61804Z" fill="#F7DD88" stroke="black"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                            <div class="baixo-card-sobre-direita">
+                                <div class="texto-card-sobre-direita">
+                                    <h2>Voo + Hospedagem</h2>
+                                    <hr>
+                                    <div class="divisoria-card">
+                                        <div style="width: 50%;">
+                                            <p>Preço por pessoa</p>
+                                            <span id="rs">R$</span><span> 3.500</span>
+                                            <p id="taxas">Taxas e impostos inclusos</p>
+                                        </div>
+                                        <div class="alinhar-btn-card-sobre">
+                                            <button>Selecionar Hotel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer0">
+                <div class="footer1">
+                    <img src="img/logo/logo-footer.png" alt="logo">
+                    <h3>APOLLO ROTAS</h3>
+                    <p>Somos o apollo rotas, o site com as melhores ofertas para viagens dentro e fora do brasil.</p>
+                </div><!--footer1-->
+                <div class="footer2">
+                    <div class="foo1">
+                        <h4>Principais</h4>
+                        <a href="#">Home</a>
+                        <a href="#">Sobre</a>
+                        <a href="#">Ofertas mais buscadas</a>
+                        <a href="#">Ofertas Hoteis</a>
+                    </div><!--foo1-->
+                    <div class="foo1">
+                        <h4>Páginas</h4>
+                        <a href="#">Hotel</a>
+                        <a href="#">Voos</a>
+                        <a href="#">Pacotes</a>
+                        <a href="#">Passeio</a>
+                    </div><!--foo1-->
+                    <div class="foo1">
+                        <h4>Contato</h4>
+                        <a href="#">Whatsapp</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Telegram</a>
+                    </div><!--foo1-->
+                </div><!--footer2-->
+            </div><!--footer0-->
+            <div class="footer3">
+                <h5>2023 APOLLO ROTAS</h5>
+                <h5>Todos os direitos reservados</h5>
+                <h6>Feito por: Ellen Dias, Gabriel Fillip, Habbiner, Leonardo Cassio e Patricia Dias</h6>
+            </div><!--footer3-->
+        </footer>
+    </body>
+</html>
