@@ -1,4 +1,3 @@
-// Adicione este código JavaScript para controlar o carrossel
 document.addEventListener('DOMContentLoaded', function () {
     const slideControllers = document.querySelectorAll('.slide-controller');
     const slides = document.querySelectorAll('.slide');
@@ -17,9 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-});
 
-document.addEventListener('DOMContentLoaded', function () {
     const rangeInput1 = document.getElementById('range1');
     const clock1 = document.getElementById('clock1');
 
