@@ -650,6 +650,15 @@ body {
   text-align: center;
 }
 
+.header-filtro-barra-pacotes-direita button {
+  width: 87px;
+  height: 38px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0px 10px 20px;
+  background-color: #34777F;;
+}
+
 input[type="date"] {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 15px;
@@ -698,6 +707,7 @@ select {
   align-items: center;
   width: 30%;
   height: auto;
+  background-color: #E7F3F4;;
 }
 
 .card-corpo-sobre-esquerda {
@@ -802,7 +812,7 @@ h3 {
 .corpo-sobre-direita {
   width: 70%;
   height: auto;
-  background-color: beige;
+  background-color: #E7F3F4;;
 }
 
 .alinhar-card-sobre {
@@ -817,6 +827,7 @@ h3 {
   height: 100%;
   border-radius: 62px;
   margin-top: 8%;
+  margin-bottom: 30px;
   display: flex;
   background-color: #D9D9D9;
 }
@@ -906,6 +917,7 @@ button {
   height: 50px;
   font-size: 16px;
   border-radius: 30px;
+  background-color: #34777F;
 }
 
 
