@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #E7F3F4;
 }
 
 @keyframes fading {
@@ -82,8 +83,11 @@ body {
 }
 
 .box-titulo {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: 0px 25% 5% 25%;
+}
+
+.box-titulo p {
+  margin-top: 2%;
 }
 
 .home-filtro {
@@ -109,7 +113,6 @@ body {
 
 .form-filtro {
   position: relative;
-  margin-top: 10px;
   width: 100%;
   display: flex;
 }
@@ -121,7 +124,7 @@ body {
 
 .input-form-filtro {
   margin: 10px;
-  width: 300px;
+  width: 300px; 
 }
 
 .form-linha {
@@ -174,7 +177,7 @@ body {
   border-image-slice: 1;
 }
 
-button {
+.home-filtro button {
   width: 87px;
   height: 38px;
   padding: 10px;
@@ -210,11 +213,13 @@ button {
 }
 
 .caixa-sobre button {
-  font-size: 26px;
+  font-size: 15px;
   width: 153px;
   height: 53px;
-  border-radius: 20px;
   margin: 61px 0px 0px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #34777F;
 }
 
 .sobre-direita {
@@ -301,13 +306,16 @@ button {
 
 .ofertas-hotel-home h1 {
   width: 100%;
+  font-size: 40px;
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .ofertas-hotel-home-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
 
 .card-hotel-home {
@@ -316,7 +324,7 @@ button {
   width: 80%;
   border-radius: 60px;
   margin-bottom: 150px;
-  background-color: #34777F;
+  background-color: #E6E6E6;;
 }
 
 .card-hotel-home img {
@@ -325,7 +333,16 @@ button {
 
 .texto-card-hotel-home {
   width: 50%;
+  border-radius: 60px;
   margin-left: 33px;
+  background-color: #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-texto-card-hotel-home {
+  width: 80%;
 }
 
 /* ------- EFEITOS DO CARD ------- */
@@ -406,14 +423,8 @@ button {
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: &quot;
-  Rubik&quot;
-  ,
-  sans-serif;
-  --font-serif: &quot;
-  Cardo&quot;
-  ,
-  serif;
+  --font-sans: '&quot, Rubik&quot, sans-serif';
+  --font-serif: '&quot; Cardo&quot; serif';
 }
 
 .page-content {
@@ -1165,6 +1176,15 @@ h4 {
   background: #1C1E1F;
   min-height: 41px;
   align-items: center;
+}
+
+.footer3 a {
+  text-decoration: none;
+  color: #787878;
+}
+
+.footer3 a:hover {
+  color: white;
 }
 
 .footer3 h5 {
