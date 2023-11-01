@@ -3,6 +3,13 @@ body {
   padding: 0;
   background-color: #E7F3F4;
 }
+p, a{
+font-family: 'Philosopher';
+}
+
+h1, h2, h3,h4, h5 {
+  font-family: 'Newsreader';
+}
 
 @keyframes fading {
 
@@ -51,6 +58,8 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   display: flex;
+  position: fixed;
+  backdrop-filter: blur(3px)
 }
 
 .menu-bar img {
@@ -59,7 +68,7 @@ body {
 
 .menu-itens {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   width: 100%;
   padding-top: 10px;
 }
@@ -75,19 +84,22 @@ body {
 }
 
 .titulo {
-  padding-top: 10%;
+  padding-top: 14%;
 }
 
 .titulo h1 {
   font-size: 90px;
+  font-family: 'Times New Roman';
+  margin-top: 2%
 }
 
 .box-titulo {
-  margin: 0px 25% 5% 25%;
+  margin: 0% 25% 5% 25%;
 }
 
 .box-titulo p {
-  margin-top: 2%;
+  margin-top: 1%;
+  margin-bottom: -2%
 }
 
 .home-filtro {
@@ -115,6 +127,7 @@ body {
   position: relative;
   width: 100%;
   display: flex;
+  margin-top: 1.5%;
 }
 
 .form-filtro h1 {
@@ -196,7 +209,11 @@ body {
   font-size: 40px;
   margin-bottom: 0px;
 }
-
+.button-sobre{
+  font-size: 10px; 
+  font-weight: 600;
+  font-family: 'arial';
+}
 .sobre p {
   font-size: 20px;
 }
@@ -302,6 +319,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5%;
 }
 
 .ofertas-hotel-home h1 {
