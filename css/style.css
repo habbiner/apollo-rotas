@@ -10,6 +10,9 @@ font-family: 'Philosopher';
 h1, h2, h3,h4, h5 {
   font-family: 'Newsreader';
 }
+button, span{
+  font-family: 'Philosopher';
+}
 
 @keyframes fading {
 
@@ -766,7 +769,9 @@ h3 {
   margin: 0;
   padding: 0;
 }
-
+.meio-cabecalho-card-filtro-esquerda{
+  margin-left: 3%;
+}
 .footer-cabecalho-card-corpo-sobre-esquerda {
   width: 100%;
   display: flex;
@@ -1045,7 +1050,7 @@ main {
 .texto h3 {
   padding: 10px 10px 10px 10px;
   color: rgba(0, 0, 0, 0.70);
-  font-family: Philosopher;
+  font-family: 'Philosopher';
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -1066,7 +1071,7 @@ main {
 }
 
 .lista {
-  padding: 0px 25% 5% 25%;
+  padding: 0px 20% 5% 20%;
   font-size: 15px;
 }
 
@@ -1082,7 +1087,8 @@ main {
 }
 
 .preco {
-  padding-left: 150px;
+  padding-left: 110px;
+  
 }
 
 .preco h6,
@@ -1102,7 +1108,7 @@ h4 {
 }
 
 .preco h4 {
-  color: #34777F;
+  color: #21818a;
   font-family: Philosopher;
   font-size: 40px;
   font-style: normal;
