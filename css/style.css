@@ -860,6 +860,7 @@ h3 {
 }
 
 .img-card-sobre-direita img {
+  border-radius: 65px;
   width: 100%;
 }
 
@@ -874,7 +875,7 @@ h3 {
 
 .alinhar-texto-card {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .alinhar-texto-card a {
