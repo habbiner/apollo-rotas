@@ -7,7 +7,16 @@ h5,
 h6 {
     margin: 0;
 }
-
+p, a{
+    font-family: 'Philosopher';
+    }
+    
+    h1, h2, h3,h4, h5 {
+    font-family: 'Newsreader';
+    }
+    button, span{
+    font-family: 'Philosopher';
+    }
 body {
     width: 100%;
     padding: 0;
@@ -187,7 +196,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/img/voo/header-voo.jpg);
+    background-image: url(/img/voo/praiachave.jpg);
     background-size: cover;
 }
 
@@ -211,7 +220,7 @@ main {
     text-decoration: none;
     color: black;
     padding-right: 80px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .links-nav a:hover {
@@ -347,7 +356,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(175, 189, 234, 0.00) 0%, rgba(175, 189, 234, 0.51) 100%), linear-gradient(180deg, rgba(116, 149, 255, 0.55) 0%, rgba(116, 149, 255, 0.00) 100%);
+    background: linear-gradient(179deg, rgba(105, 105, 105, 0.51) 0.49%, rgba(138, 138, 138, 0.29) 97.45%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 380px;
     height: 40%;
@@ -378,7 +387,7 @@ a {
     height: 50%;
     border-radius: 10px;
     background: #D8DEF7;
-    background: linear-gradient(0deg, #7590f9 0%, rgba(4, 13, 172, 0.699) 100%);
+    background: linear-gradient(0deg, #9b9b9b 0%, rgba(66, 58, 97, 0.13) 100%);
     border: none;
     text-align: center;
     font-size: 15px;
@@ -417,8 +426,8 @@ input:focus+.line:after {
 
 .origem .line {
     width: 90%;
-    height: 3px;
-    background: #bdc3c7;
+    height: 2px;
+    background: #f1f1f1;
 }
 
 .origem .line:after {
@@ -484,7 +493,7 @@ form {
     width: 120px;
     height: 50px;
     border-radius: 20px;
-    background: linear-gradient(0deg, rgb(45, 164, 227) 0%, rgb(69, 81, 212) 100%);
+    background: linear-gradient(0deg, rgba(77, 77, 77, 0.51) 0%, rgba(66, 58, 97, 0.13) 100%);
     text-align: center;
     font-size: 25px;
 }
@@ -504,7 +513,7 @@ form {
     grid-template-columns: 250px auto auto auto;
     grid-template-rows: 50px auto auto auto auto;
     border-radius: 20px;
-    background: linear-gradient(179deg, rgba(175, 189, 234, 0.45) 0.49%, rgba(114, 214, 240, 0.29) 97.45%);
+    background: linear-gradient(179deg, rgba(105, 105, 105, 0.51) 0.49%, rgba(138, 138, 138, 0.29) 97.45%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 190px;
@@ -518,7 +527,7 @@ form {
     border: 1px solid #000;
     border-bottom: 0;
     border-radius: 20px 20px 0px 0px;
-    background: #AFBDEA;
+    background: linear-gradient(179deg, rgba(105, 105, 105, 0.51) 0.49%, rgba(138, 138, 138, 0.29) 97.45%);
 }
 
 .m2 {
@@ -540,7 +549,7 @@ form {
     border: 1px solid rgb(0, 0, 0);
     align-content: center;
     justify-content: center;
-    border-top: 0;
+    border-top: 1;
     border-left: 0;
 }
 
@@ -549,7 +558,7 @@ form {
     border: 1px solid rgb(0, 0, 0);
     align-content: center;
     justify-content: center;
-    border-top: 0;
+    border-top: 1;
 }
 
 .m4 {
@@ -557,7 +566,7 @@ form {
     border: 1px solid rgb(0, 0, 0);
     align-content: center;
     justify-content: center;
-    border-top: 0;
+    border-top: 1;
     border-right: 0;
 }
 
@@ -675,7 +684,7 @@ h6 {
     height: 178px;
     border-radius: 20px;
     border-right: 1px dashed rgba(38, 38, 38);
-    background: rgba(175, 189, 234, 0.26);
+    background: linear-gradient(179deg, rgba(105, 105, 105, 0.51) 0.49%, rgba(138, 138, 138, 0.29) 97.45%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
@@ -743,7 +752,7 @@ h6 {
     grid-template-rows: 25% 50%;
     border-radius: 20px;
     border-left: 1px dashed rgb(38, 38, 38);
-    background: rgba(175, 189, 234, 0.55);
+    background: rgba(201, 201, 201, 0.55);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
@@ -835,7 +844,7 @@ h6 {
     flex-direction: column;
     align-items: stretch;
     border-radius: 20px;
-    background: linear-gradient(180deg, rgba(175, 189, 234, 0.00) 0%, rgba(95, 205, 255, 0.38) 100%), linear-gradient(180deg, rgba(175, 189, 234, 0.55) 0%, rgba(175, 189, 234, 0.28) 100%);
+    background: linear-gradient(179deg, rgba(105, 105, 105, 0.51) 0.49%, rgba(179, 179, 179, 0.29) 97.45%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 380px;
     height: 40%;
@@ -875,7 +884,7 @@ h6 {
 
 .f2-1 {
     border-radius: 20px;
-    background: rgba(175, 189, 234, 0.55);
+    background: rgba(233, 233, 233, 0.55);
     height: 60px;
     width: 60px;
     display: flex;
