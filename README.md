@@ -1,7 +1,7 @@
-# Sunset Travel's
+# Apollo Rotas
 
 ### Link site
-- https://sunset-travels.netlify.app <br>
+- https://apollo-rotas.netlify.app <br>
 Website desenvolvido para o projeto interdisciplinar da Fatec Dr. Thomaz Novelino (Franca). Tecnologias usadas neste projeto foi HTML, CSS e JS.
 
 Desenvolvedores:
