@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: #E7F3F4;
 }
+
 p, a{
 font-family: 'Philosopher';
 }
@@ -10,6 +11,7 @@ font-family: 'Philosopher';
 h1, h2, h3,h4, h5 {
   font-family: 'Newsreader';
 }
+
 button, span{
   font-family: 'Philosopher';
 }
@@ -38,15 +40,12 @@ button, span{
 }
 
 .header {
-  /* background-image: url(/img/header.jpg); */
   animation: fading 12s infinite;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  /* 100% da altura da janela de visualização */
   overflow: hidden;
-  /* Impede que a imagem se expanda ao rolar */
   display: inline-block;
   text-align: center;
   justify-content: center;
@@ -55,6 +54,13 @@ button, span{
 .header h1 {
   padding: 0px;
   margin: 0px;
+}
+
+.menu-bar-home {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  backdrop-filter: blur(3px)
 }
 
 .menu-bar {
@@ -106,7 +112,6 @@ button, span{
 }
 
 .home-filtro {
-  /* background-color: blue; */
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   height: auto;
@@ -258,9 +263,6 @@ button, span{
 .ofertas-home {
   width: 100%;
   height: 100vh;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .ofertas-home-cards {
@@ -303,7 +305,6 @@ button, span{
   display: flex;
 }
 
-/* Adicione as propriedades CSS para ocultar slides não visíveis */
 .slide {
   display: none;
 }
@@ -365,8 +366,6 @@ button, span{
 .div-texto-card-hotel-home {
   width: 80%;
 }
-
-/* ------- EFEITOS DO CARD ------- */
 
 .carousel {
   position: relative;
@@ -634,17 +633,12 @@ button, span{
   }
 }
 
-
-/* --- TELA PACOTES --- */
-
 .header-pacotes {
-  background-image: url(/img/pacotes/praia.jpg);
-  /* background-color: #34777F; */
+  background-image: url(/img/header-pacotes.jpg);
   width: 100%;
   height: 390px;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -711,7 +705,6 @@ select {
 .header-filtro-barra-pacotes-direita button {
   width: 120px;
   height: 44px;
-  /* font-size: 16px; */
   margin: 10px 0px 0px 0px;
 }
 
@@ -789,8 +782,6 @@ h3 {
   background: #D8DEF7;
 }
 
-/* ---------------------------------------------- */
-
 .card-filtro-sobre-esquerda {
   width: 350px;
   height: auto;
@@ -864,10 +855,6 @@ h3 {
   width: 100%;
 }
 
-/* .img-card-sobre-direita img:hover {
-  width: 101%;
-} */
-
 .texto-direita {
   width: 60%;
   height: auto;
@@ -890,7 +877,6 @@ h3 {
 .texto-card-sobre-direita {
   width: 90%;
   margin-left: 32px;
-  /* background-color: chartreuse; */
 }
 
 .baixo-card-sobre-direita h2,
@@ -943,10 +929,6 @@ button {
   border-radius: 30px;
   background-color: #34777F;
 }
-
-
-/* --------------- TELA PASSEIOS --------------- */
-
 
 main {
   padding: 40px 4%;
@@ -1117,13 +1099,6 @@ h4 {
   line-height: normal;
 
 }
-
-
-/* ---------------VOOS--------------- */
-
-
-
-/* ---------------FOOTER--------------- */
 
 .footer0 {
   display: flex;
