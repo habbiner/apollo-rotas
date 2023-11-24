@@ -6,16 +6,16 @@ body{
 
 @keyframes fading {
 0%, 25% {
-background-image: url(img/Hotel/header.jpg);
+background-image: url(/img/Hotel/header.jpg);
 }
 25%, 50% {
-background-image: url(img/Hotel/header1.jpg);
+background-image: url(/img/Hotel/header1.jpg);
 }
 50%, 75% {
-background-image: url(img/Hotel/header2.jpg);
+background-image: url(/img/Hotel/header2.jpg);
 }
 75%, 100% {
-background-image: url(img/Hotel/header1.jpg);
+background-image: url(/img/Hotel/header.jpg);
  }
 }
 
@@ -48,13 +48,13 @@ padding-bottom: 75px;
     height: 25px;
     color: #D9D9D9;
     font-family: Philosopher;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-left: 300px;
     position:absolute;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .letrabaixo2{
@@ -62,13 +62,13 @@ padding-bottom: 75px;
     height: 25px;
     color: #D9D9D9;
     font-family: Philosopher;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-left: 700px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .letrabaixo3{
@@ -76,12 +76,12 @@ padding-bottom: 75px;
     height: 25px;
     color: #D9D9D9;
     font-family: Philosopher;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-left: 1100px;
-    margin-top: 20px;
+    margin-top: 25px;
     position: absolute;
 }
 
