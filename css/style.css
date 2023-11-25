@@ -84,12 +84,12 @@ button, span{
 
 .menu-itens a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding-right: 80px;
 }
 
 .menu-itens a:hover {
-  color: white;
+  color: lavender;
 }
 
 .titulo {
